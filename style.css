@@ -5,6 +5,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+.updock-regular {
+  font-family: "Updock", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --dark-color: #000;
@@ -19,6 +24,7 @@ body {
   overflow: hidden;
   perspective: 1000px;
   padding: 50px 0px;
+  font-family: 'Updock', sans-serif;
 }
 
 .night {
@@ -30,6 +36,15 @@ body {
   height: 100%;
   filter: blur(0.1vmin);
 }
+.girlfriend-name {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeInName 2s ease-in-out 4s forwards; /* 4s delay */
+}
+
 
 .happy-woman-day {
   color: white;
@@ -993,3 +1008,13 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+@keyframes fadeInName {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
